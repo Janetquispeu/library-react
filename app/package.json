@@ -11,7 +11,7 @@
     "stats": "webpack --profile --json --config config/webpack/prod.js > stats.json",
     "analyze": "webpack-bundle-analyzer stats.json dist/",
     "server": "node mock/index.js",
-    "publish": "git subtree push --prefix dist origin dev"
+    "publish": "git subtree push --prefix dist origin qa"
   },
   "author": "",
   "license": "ISC",
@@ -21,10 +21,14 @@
   },
   "homepage": "http://localhost/",
   "dependencies": {
+    "@material-ui/core": "4.11.0",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-redux": "7.2.0",
     "redux": "4.0.5",
+    "redux-form": "^8.3.6",
+    "redux-form-material-ui": "4.3.4",
     "redux-thunk": "2.3.0",
     "styled-components": "5.1.0"
   },
@@ -50,6 +54,8 @@
     "file-loader": "6.0.0",
     "html-webpack-plugin": "4.2.0",
     "mini-css-extract-plugin": "0.9.0",
+    "react-slugify": "2.0.1",
+    "slugify": "1.4.5",
     "style-loader": "1.1.3",
     "stylelint": "13.3.2",
     "stylelint-custom-processor-loader": "0.6.0",
